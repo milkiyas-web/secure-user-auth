@@ -83,24 +83,24 @@ function App() {
 						</RedirectAuthenticatedUser>
 					}
 				/>
-				{/* <Route path='/verify-email' element={<EmailVerificationPage />} /> */}
-				{/* <Route
+				{/* <Route path='/verify-email' element={<EmailVerificationPage />} />  */}
+				<Route
 					path='/forgot-password'
 					element={
 						<RedirectAuthenticatedUser>
 							<ForgotPasswordPage />
 						</RedirectAuthenticatedUser>
 					}
-				/> */}
+				/>
 
-				{/* <Route
+				<Route
 					path='/reset-password/:token'
 					element={
 						<RedirectAuthenticatedUser>
 							<ResetPasswordPage />
 						</RedirectAuthenticatedUser>
 					}
-				/> */}
+				/>
 				{/* catch all routes */}
 				<Route path='*' element={<Navigate to='/' replace />} />
 			</Routes>
